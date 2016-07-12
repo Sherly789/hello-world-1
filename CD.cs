@@ -26,7 +26,13 @@ class Cd
 
   public void SetPrice(int newPrice)
   {
+    // _price = newPrice;
+    if (newPrice >= 0) {
     _price = newPrice;
+    }
+    else {
+      Console.WriteLine("The price for this item is not valid.");
+    }
   }
   public int GetPrice()
   {

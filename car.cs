@@ -58,6 +58,8 @@ public class Program
     foreach(Car automobile in Cars)
     {
       Console.WriteLine(automobile.GetMakeModel());
+      Console.WriteLine(automobile.GetPrice());
+      Console.WriteLine(automobile.GetMiles());
     }
 
     Console.WriteLine("Enter maximum price: ");
@@ -71,6 +73,9 @@ public class Program
       if (automobile.GetPrice() < maxPrice)
       {
         CarsMatchingSearch.Add(automobile);
+      }
+      else {
+        Console.WriteLine("Your Money is less than our Min price");
       }
     }
 
